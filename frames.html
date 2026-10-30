@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <title>Choose Frame - HMIF Photobooth</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;900&display=swap"
+        rel="stylesheet">
+
+</head>
+
+
+<body class="frame-body">
+
+
+    <!-- Decorative Newspaper Elements -->
+
+    <img src="assets/images/hiasankiri.png" class="decorate-left">
+
+    <img src="assets/images/hiasankanan.png" class="decorate-right">
+
+
+
+    <!-- Header -->
+
+    <header class="frame-header">
+
+
+        <button class="back-btn" onclick="location.href='index.html'">
+            ← Back
+        </button>
+
+
+
+        <div class="top-label">
+            <img src="assets/images/logo.png" alt="HMIF" class="header-logo-mini"> ✦ HMIF FRAME ARCHIVE ✦
+        </div>
+
+
+
+        <h1>
+            Choose Your Frame
+        </h1>
+
+
+        <p>
+            Select your HMIF story
+        </p>
+
+
+
+        <div class="newspaper-line"></div>
+
+
+    </header>
+
+
+
+
+
+
+    <!-- Main Content -->
+
+    <div class="frame-layout">
+
+
+
+
+
+        <!-- Frame Gallery -->
+
+        <div class="gallery">
+
+
+
+            <div class="frame-card" onclick="chooseFrame('frame1.png', this)">
+                <img src="assets/frames/frame1.png">
+                <p>HMIF Special Edition</p>
+            </div>
+
+
+
+            <div class="frame-card" onclick="chooseFrame('frame2.png', this)">
+                <img src="assets/frames/frame2.png">
+                <p>Star HMIF</p>
+            </div>
+
+
+
+            <div class="frame-card" onclick="chooseFrame('frame3.png', this)">
+                <img src="assets/frames/frame3.png">
+                <p>Informatika</p>
+            </div>
+
+
+
+            <div class="frame-card" onclick="chooseFrame('frame4.png', this)">
+                <img src="assets/frames/frame4.png">
+                <p>Warta HMIF</p>
+            </div>
+
+
+
+            <div class="frame-card" onclick="chooseFrame('frame5.png', this)">
+                <img src="assets/frames/frame5.png">
+                <p>Star Informatika</p>
+            </div>
+
+
+
+            <div class="frame-card" onclick="chooseFrame('frame6.png', this)">
+                <img src="assets/frames/frame6.png">
+                <p>Koran HMIF</p>
+            </div>
+
+
+
+            <div class="frame-card" onclick="chooseFrame('frame7.png', this)">
+                <img src="assets/frames/frame7.png">
+                <p>HMIF Gazette</p>
+            </div>
+
+
+
+            <div class="frame-card" onclick="chooseFrame('frame8.png', this)">
+                <img src="assets/frames/frame8.png">
+                <p>Logic Press</p>
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+        <!-- Preview -->
+
+        <div class="selected">
+
+
+
+            <h2>
+                Preview
+            </h2>
+
+
+
+            <div class="preview-frame">
+
+                <img id="preview" src="assets/frames/frame1.png">
+
+            </div>
+
+
+
+
+            <div id="slot-info" class="slot-info">
+                <span class="slot-count">4</span> foto akan diambil
+            </div>
+
+            <button onclick="goCamera()">
+
+                Use This Frame →
+
+            </button>
+
+
+
+
+        </div>
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <script src="js/frames.js"></script>
+
+
+
+</body>
+
+</html>

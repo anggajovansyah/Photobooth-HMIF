@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Your Moment - HMIF Photobooth</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="result-body">
+
+
+    <div class="result-page">
+
+
+        <!-- HEADER -->
+        <div class="result-header">
+            <p class="result-label">✦ YOUR MOMENT ✦</p>
+            <h1>Hasil Foto</h1>
+            <p class="result-subtitle">Preview dan download foto kamu</p>
+        </div>
+
+
+        <!-- CANVAS RESULT -->
+        <div class="result-canvas-wrap">
+            <canvas id="resultCanvas"></canvas>
+        </div>
+
+
+        <!-- ACTION BUTTONS -->
+        <div class="result-actions">
+
+            <button onclick="download()" class="btn-download">
+                ↓ Download Foto
+            </button>
+
+            <button onclick="retake()" class="btn-retake">
+                📷 Foto Ulang
+            </button>
+
+            <button onclick="chooseNewFrame()" class="btn-new-frame">
+                ▦ Pilih Frame Lain
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="js/storage.js"></script>
+    <script src="js/frames.js"></script>
+    <script src="js/result.js"></script>
+
+
+</body>
+
+</html>

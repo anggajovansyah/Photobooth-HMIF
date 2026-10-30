@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Camera Studio - HMIF Photobooth</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="camera-page">
+
+
+    <!-- FLASH EFFECT -->
+    <div id="flash" class="camera-flash"></div>
+
+
+    <div class="camera-container">
+
+
+        <!-- LIVE CAMERA -->
+        <video id="video" autoplay playsinline></video>
+
+
+        <!-- COUNTDOWN / INFO -->
+        <h2 id="count"></h2>
+
+
+        <!-- PHOTO STRIP (thumbnails di bawah) -->
+        <div id="photo-strip" class="photo-strip"></div>
+
+
+        <!-- BUTTONS -->
+        <div class="camera-buttons">
+
+            <button id="retake-btn" onclick="retakeLast()" class="btn-secondary" style="display:none;">
+                ↩ Ulang Foto Terakhir
+            </button>
+
+            <button onclick="capture()" class="capture-btn">
+                📷 Take Photo
+            </button>
+
+            <button id="done-btn" onclick="finishCapture()" class="btn-done" style="display:none;">
+                ✓ Lihat Hasil →
+            </button>
+
+        </div>
+
+
+    </div>
+
+
+
+    <script src="js/storage.js"></script>
+    <script src="js/frames.js"></script>
+    <script src="js/camera.js"></script>
+
+</body>
+
+</html>
